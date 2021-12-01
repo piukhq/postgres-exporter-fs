@@ -4,7 +4,7 @@ Simple up state exporter for "Azure Database for PostgreSQL flexible servers"
 
 #### Environment Variables
 - `PG_URI`
-  - String value, URI to Postgres Flexible Server
+  - String value, URI to Postgres Flexible Server, default "postgresql://127.0.0.1/postgres"
 - `TEST_PERIOD`
   - Numeric value, period between tests in seconds, default 5
 - `POSTGRES`

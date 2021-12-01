@@ -8,9 +8,9 @@ Simple up state exporter for "Azure Database for PostgreSQL flexible servers"
 - `TEST_PERIOD`
   - Numeric value, period between tests in seconds, default 5
 - `POSTGRES`
-  - Boulean value, set to True or 1 to test Postgres
+  - Set to True or False to test/ignore Postgres
 - `PGBOUNCER`
-  - Boulean value, set to True or 1 to test PgBouncer
+  - Set to True or False to test/ignore PgBouncer
 - `POSTGRES_PORT`
   - Numeric value, port number to connect to Postgres, default 5432
 - `PGBOUNCER_PORT`

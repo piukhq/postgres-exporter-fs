@@ -38,5 +38,5 @@ jobs:
       with:
         push: true
         tags: |
-          ghcr.io/binkhq/postgres-exporter-fs:${{ steps.date.outputs.date }}
-          ghcr.io/binkhq/postgres-exporter-fs:latest
+          binkcore.azurecr.io/postgres-exporter-fs:${{ steps.date.outputs.date }}
+          binkcore.azurecr.io/postgres-exporter-fs:latest

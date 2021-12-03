@@ -7,9 +7,7 @@ from prometheus_client import Gauge, start_http_server
 
 from settings import pg, pg_port, pgb, pgb_port, tp, uri
 
-logging.basicConfig(
-    format="%(asctime)s %(message)s", stream=sys.stdout, level=logging.INFO
-)
+logging.basicConfig(format="%(asctime)s %(message)s", stream=sys.stdout, level=logging.INFO)
 
 if pg:
     pg_metric = Gauge("postgres_up_state", "Flexible Server Postgres Up State")
@@ -19,9 +17,7 @@ if pgb:
 
 def check_vars():
     if not pg and not pgb:
-        logging.info(
-            "Neither POSTGRES or PGBOUNCER environment variables are set to True"
-        )
+        logging.info("Neither POSTGRES or PGBOUNCER environment variables are set to True")
         logging.info("Nothing to check so exiting")
         exit()
 

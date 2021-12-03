@@ -1,4 +1,4 @@
-### postgres_exporter_fs
+### postgres-exporter-fs
 
 Simple up state exporter for "Azure Database for PostgreSQL flexible servers"
 

@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 black = "==21.4b1"
 flake8 = "*"
+isort = "*"
 
 [packages]
 prometheus-client = "*"

@@ -1,10 +1,11 @@
 import logging
-import psycopg2
 import sys
-
-from prometheus_client import start_http_server, Gauge
-from settings import uri, pg, pg_port, pgb, pgb_port, tp
 from time import sleep
+
+import psycopg2
+from prometheus_client import Gauge, start_http_server
+
+from settings import pg, pg_port, pgb, pgb_port, tp, uri
 
 logging.basicConfig(
     format="%(asctime)s %(message)s", stream=sys.stdout, level=logging.INFO
